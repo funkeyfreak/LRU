@@ -235,7 +235,6 @@ public class LRU {
 		
 		while(!exit){
 		    // I had to look this one up http://www.mkyong.com/java/how-to-read-input-from-console-java/
-		    
 	        input = scanIn.nextLine();
 	        
 	       
@@ -246,74 +245,39 @@ public class LRU {
 				int length = inputSplit.length;
 				
 				try{
-					switch(operation){
-						case "SIZE":
-							if(length == 2 && cache == null){
-								int size = Integer.parseInt(inputSplit[1]);
-								cache = new LRU(size);
-								results = "SIZE OK";
+					if(operation.equals("SIZE")){
+						if(length == 2 && cache == null){
+							int size = Integer.parseInt(inputSplit[1]);
+							cache = new LRU(size);
+							results = "SIZE OK";
+						}
+					}
+					else if(operation.equals("SET")){
+						if(length == 3 && cache != null){
+							cache.set(inputSplit[1], inputSplit[2]);
+							results = "SET OK";
+						}
+					}
+					else if(operation.equals("GET")){
+						if(length == 2 && cache != null){
+							String key = inputSplit[1];
+							results = cache.get(key);
+							if(results == ""){
+								results = "NOTFOUND";
 							}
-							break;
-						case "SET":
-							if(length == 3 && cache != null){								
-								cache.set(inputSplit[1], inputSplit[2]);
-								results = "SET OK";
+							else{
+								results = "GOT " + results;
 							}
-							break;
-						case "GET":
-							if(length == 2 && cache != null){
-								String key = inputSplit[1];
-								results = cache.get(key);
-								if(results == ""){
-									results = "NOTFOUND";
-								}
-								else{
-									results = "GOT " + results;
-								}
-							}
-							break;
-						case "EXIT":
-							exit = true;
-							results = "";
-							break;
-						default:
-							//Nothing at all
-					
+						}
+					}
+					else if(operation.equals("EXIT")){
+						exit = true;
+						results = "";
 					}
 				}
 				finally{
 					System.out.println(results);
 				}
-				
-				/*if(inputSplit.length == 3 && inputSplit[0] == "SET"){
-					try{
-						
-					}
-					catch(NumberFormatException e){
-						//Actually do nothing and wait for error to come
-					}
-				}				
-				else if(inputSplit.length == 2){					
-					//if we have ran the "size function, we continue on
-					if(cache != null){
-						//Simple try catch, just-in-case nasty data. If it is nasty data, we simply crash and burn
-						try{
-							//Get the size, if valid, and initialize LRU, otherwise ERROR
-							if(inputSplit[0] == "SIZE"){
-
-							}
-							//Otherwise properly set the GET variable
-							else if(inputSplit[0] == "GET"){
-								
-							}
-						}
-						catch(NumberFormatException e){
-							//Actually do nothing and wait for error to come
-						}
-					}	
-				}
-				//We always print out something :)
-				System.out.println(results);*/
 			}
 		}
 		scanIn.close();
