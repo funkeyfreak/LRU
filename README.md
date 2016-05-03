@@ -1,5 +1,5 @@
 # LRU
-This is a simple Least-Recently used Cache implemented in Java 1.6.0
+This is a simple Least-Recently used Cache implemented in Java 6.0
 
 
 # General Readme
