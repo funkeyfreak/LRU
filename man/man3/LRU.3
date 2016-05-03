@@ -1,0 +1,85 @@
+.TH "LRU" 3 "Mon May 2 2016" "Version 1.0.0" "LRU" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+LRU \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLRU\fP (int size)"
+.br
+.ti -1c
+.RI "void \fBset\fP (String key, String value)"
+.br
+.ti -1c
+.RI "String \fBget\fP (String key)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBmain\fP (String[] args)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the \fBLRU\fP Coding example as giving by BrandVarity
+.PP
+\fBAuthor:\fP
+.RS 4
+Dalin Williams 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0\&.0 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "LRU\&.LRU (int size)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "String LRU\&.get (String key)"
+This function gets a value from our cache if it exists, otherwise it returns an empty string 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIkey\fP String The to find within our cache 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+If key\&.exist ? value : '' 
+.RE
+.PP
+
+.SS "static void LRU\&.main (String[] args)\fC [static]\fP"
+
+.SS "void LRU\&.set (String key, String value)"
+This function sets a key value pair into our cache
+.PP
+\fBParameters:\fP
+.RS 4
+\fIkey\fP String The new key 
+.br
+\fIValue\fP String The new value 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+VOID 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LRU from the source code\&.

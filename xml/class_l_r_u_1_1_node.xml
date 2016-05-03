@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_l_r_u_1_1_node" kind="class" language="Java" prot="private">
+    <compoundname>LRU::Node</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_l_r_u_1_1_node_1ac225c1bb4645f443067d8d3fb71abe11" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String LRU.Node.key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="54" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_r_u_1_1_node_1a96c81a0be2003f63a19f1a44f71210f1" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String LRU.Node.value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="64" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_r_u_1_1_node_1a413d820f762795b0eae8e51ecbeadef0" prot="private" static="no" mutable="no">
+        <type>Node</type>
+        <definition>Node LRU.Node.next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="73" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_r_u_1_1_node_1a9701b79f926d322001c54da1ff889606" prot="private" static="no" mutable="no">
+        <type>Node</type>
+        <definition>Node LRU.Node.prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="82" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1a11f6822d06f7939d87607c57b6bea242" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LRU.Node.setKey</definition>
+        <argsstring>(String newKey)</argsstring>
+        <name>setKey</name>
+        <param>
+          <type>String</type>
+          <declname>newKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="55" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1a80f2cdc3ea40ba1d81f34f323ebffcb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String LRU.Node.getKey</definition>
+        <argsstring>()</argsstring>
+        <name>getKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="60" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1a69621e9f34cdbaa463dd31911e2c27c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LRU.Node.setValue</definition>
+        <argsstring>(String newValue)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>String</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="65" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1a7acdf2aa1c23db838e99c1d5ebef1ca3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String LRU.Node.getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="69" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1a2ee8353b5ee122cacf1691ef9c0cff12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LRU.Node.setNext</definition>
+        <argsstring>(Node newNext)</argsstring>
+        <name>setNext</name>
+        <param>
+          <type>Node</type>
+          <declname>newNext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="74" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1a9ec33649485bc5ad15b09e0dba2e8bd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Node</type>
+        <definition>Node LRU.Node.getNext</definition>
+        <argsstring>()</argsstring>
+        <name>getNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="78" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1a9dba655fa24b09afde746080b9b9d2eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LRU.Node.setPrev</definition>
+        <argsstring>(Node newPrev)</argsstring>
+        <name>setPrev</name>
+        <param>
+          <type>Node</type>
+          <declname>newPrev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="83" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1a53fec4b43f1376c862cb070852fc7568" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Node</type>
+        <definition>Node LRU.Node.getPrev</definition>
+        <argsstring>()</argsstring>
+        <name>getPrev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="87" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1a7c3c281710f3a2236bd8fa2817447721" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LRU.Node.Node</definition>
+        <argsstring>(String key, String value, Node next, Node prev)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Node</type>
+          <declname>next</declname>
+        </param>
+        <param>
+          <type>Node</type>
+          <declname>prev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="91" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="91" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1_1_node_1afbf20c7c5410ad5ac2a51d99d437fa4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LRU.Node.Node</definition>
+        <argsstring>(String key, String value)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="99" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="99" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A simple linked list implementation to ease the LRUI-ness of this application. This Link List will allow us to easly ease out &apos;old&apos; data</para><para>NOTE: We did not include any defalt type checking as one would do in an official release of a <ref refid="class_l_r_u" kindref="compound">LRU</ref> product <simplesect kind="author"><para>Dalin Williams </para></simplesect>
+</para>    </detaileddescription>
+    <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="52" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="52" bodyend="107"/>
+    <listofallmembers>
+      <member refid="class_l_r_u_1_1_node_1a80f2cdc3ea40ba1d81f34f323ebffcb9" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>getKey</name></member>
+      <member refid="class_l_r_u_1_1_node_1a9ec33649485bc5ad15b09e0dba2e8bd3" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>getNext</name></member>
+      <member refid="class_l_r_u_1_1_node_1a53fec4b43f1376c862cb070852fc7568" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>getPrev</name></member>
+      <member refid="class_l_r_u_1_1_node_1a7acdf2aa1c23db838e99c1d5ebef1ca3" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>getValue</name></member>
+      <member refid="class_l_r_u_1_1_node_1ac225c1bb4645f443067d8d3fb71abe11" prot="private" virt="non-virtual"><scope>LRU::Node</scope><name>key</name></member>
+      <member refid="class_l_r_u_1_1_node_1a413d820f762795b0eae8e51ecbeadef0" prot="private" virt="non-virtual"><scope>LRU::Node</scope><name>next</name></member>
+      <member refid="class_l_r_u_1_1_node_1a7c3c281710f3a2236bd8fa2817447721" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>Node</name></member>
+      <member refid="class_l_r_u_1_1_node_1afbf20c7c5410ad5ac2a51d99d437fa4d" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>Node</name></member>
+      <member refid="class_l_r_u_1_1_node_1a9701b79f926d322001c54da1ff889606" prot="private" virt="non-virtual"><scope>LRU::Node</scope><name>prev</name></member>
+      <member refid="class_l_r_u_1_1_node_1a11f6822d06f7939d87607c57b6bea242" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>setKey</name></member>
+      <member refid="class_l_r_u_1_1_node_1a2ee8353b5ee122cacf1691ef9c0cff12" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>setNext</name></member>
+      <member refid="class_l_r_u_1_1_node_1a9dba655fa24b09afde746080b9b9d2eb" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>setPrev</name></member>
+      <member refid="class_l_r_u_1_1_node_1a69621e9f34cdbaa463dd31911e2c27c4" prot="public" virt="non-virtual"><scope>LRU::Node</scope><name>setValue</name></member>
+      <member refid="class_l_r_u_1_1_node_1a96c81a0be2003f63a19f1a44f71210f1" prot="private" virt="non-virtual"><scope>LRU::Node</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

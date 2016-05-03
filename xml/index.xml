@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9.1">
+  <compound refid="class_l_r_u" kind="class"><name>LRU</name>
+    <member refid="class_l_r_u_1af394ff662d37787a317459b398558860" kind="variable"><name>map</name></member>
+    <member refid="class_l_r_u_1a9a2fadac2e0c1dd3f8ccb65aec033b97" kind="variable"><name>size</name></member>
+    <member refid="class_l_r_u_1a3307e593d7d7622466a6845753a4a51a" kind="variable"><name>head</name></member>
+    <member refid="class_l_r_u_1acbb13034ea08b8b71958e32322f63845" kind="variable"><name>tail</name></member>
+    <member refid="class_l_r_u_1a265cf83061ca2f6b5dc9e8ca842beea4" kind="function"><name>LRU</name></member>
+    <member refid="class_l_r_u_1ab702341aa4a02cc01688ef45bc180d52" kind="function"><name>set</name></member>
+    <member refid="class_l_r_u_1a387b1a859bd1b63e588a2aa580cee9c5" kind="function"><name>get</name></member>
+    <member refid="class_l_r_u_1a0f2b5031e57c4e032e359b86f4afab5f" kind="function"><name>moveToFront</name></member>
+    <member refid="class_l_r_u_1a2acf6204af20117102eb77b9e81b8c70" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="class_l_r_u_1_1_node" kind="class"><name>LRU::Node</name>
+    <member refid="class_l_r_u_1_1_node_1ac225c1bb4645f443067d8d3fb71abe11" kind="variable"><name>key</name></member>
+    <member refid="class_l_r_u_1_1_node_1a96c81a0be2003f63a19f1a44f71210f1" kind="variable"><name>value</name></member>
+    <member refid="class_l_r_u_1_1_node_1a413d820f762795b0eae8e51ecbeadef0" kind="variable"><name>next</name></member>
+    <member refid="class_l_r_u_1_1_node_1a9701b79f926d322001c54da1ff889606" kind="variable"><name>prev</name></member>
+    <member refid="class_l_r_u_1_1_node_1a11f6822d06f7939d87607c57b6bea242" kind="function"><name>setKey</name></member>
+    <member refid="class_l_r_u_1_1_node_1a80f2cdc3ea40ba1d81f34f323ebffcb9" kind="function"><name>getKey</name></member>
+    <member refid="class_l_r_u_1_1_node_1a69621e9f34cdbaa463dd31911e2c27c4" kind="function"><name>setValue</name></member>
+    <member refid="class_l_r_u_1_1_node_1a7acdf2aa1c23db838e99c1d5ebef1ca3" kind="function"><name>getValue</name></member>
+    <member refid="class_l_r_u_1_1_node_1a2ee8353b5ee122cacf1691ef9c0cff12" kind="function"><name>setNext</name></member>
+    <member refid="class_l_r_u_1_1_node_1a9ec33649485bc5ad15b09e0dba2e8bd3" kind="function"><name>getNext</name></member>
+    <member refid="class_l_r_u_1_1_node_1a9dba655fa24b09afde746080b9b9d2eb" kind="function"><name>setPrev</name></member>
+    <member refid="class_l_r_u_1_1_node_1a53fec4b43f1376c862cb070852fc7568" kind="function"><name>getPrev</name></member>
+    <member refid="class_l_r_u_1_1_node_1a7c3c281710f3a2236bd8fa2817447721" kind="function"><name>Node</name></member>
+    <member refid="class_l_r_u_1_1_node_1afbf20c7c5410ad5ac2a51d99d437fa4d" kind="function"><name>Node</name></member>
+  </compound>
+  <compound refid="_l_r_u_8java" kind="file"><name>LRU.java</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

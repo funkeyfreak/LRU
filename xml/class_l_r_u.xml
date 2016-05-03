@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_l_r_u" kind="class" language="Java" prot="public">
+    <compoundname>LRU</compoundname>
+    <innerclass refid="class_l_r_u_1_1_node" prot="private">LRU::Node</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_l_r_u_1af394ff662d37787a317459b398558860" prot="private" static="no" mutable="no">
+        <type>HashMap&lt; String, Node &gt;</type>
+        <definition>HashMap&lt;String, Node&gt; LRU.map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This hashmap holds a combination of string elements and our DoubleLinkedList nodes</para><para>NOTE: I am not using static, as the problem states &quot;... your cache does not need persistence across sessions.&quot; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="20" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_r_u_1a9a2fadac2e0c1dd3f8ccb65aec033b97" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LRU.size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The integer assoiated with the size of our hash map / <ref refid="class_l_r_u" kindref="compound">LRU</ref> cache </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="24" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_r_u_1a3307e593d7d7622466a6845753a4a51a" prot="private" static="no" mutable="no">
+        <type>Node</type>
+        <definition>Node LRU.head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The head of doubly linked list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="28" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_r_u_1acbb13034ea08b8b71958e32322f63845" prot="private" static="no" mutable="no">
+        <type>Node</type>
+        <definition>Node LRU.tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The tail of our doubly linked list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="32" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_l_r_u_1a265cf83061ca2f6b5dc9e8ca842beea4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LRU.LRU</definition>
+        <argsstring>(int size)</argsstring>
+        <name>LRU</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="34" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="34" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1ab702341aa4a02cc01688ef45bc180d52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LRU.set</definition>
+        <argsstring>(String key, String value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets a key value pair into our cache</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String The new key </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String The new value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VOID </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="170" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="170" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_l_r_u_1a387b1a859bd1b63e588a2aa580cee9c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String LRU.get</definition>
+        <argsstring>(String key)</argsstring>
+        <name>get</name>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets a value from our cache if it exists, otherwise it returns an empty string <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String The to find within our cache </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If key.exist ? value : &quot;&quot; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="211" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="211" bodyend="228"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_l_r_u_1a0f2b5031e57c4e032e359b86f4afab5f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LRU.moveToFront</definition>
+        <argsstring>(Node element)</argsstring>
+        <name>moveToFront</name>
+        <param>
+          <type>Node</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function moves a node to the front of our linked list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The node to move to front </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>VOID </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="114" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="114" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_l_r_u_1a2acf6204af20117102eb77b9e81b8c70" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void LRU.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="230" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="230" bodyend="320"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the <ref refid="class_l_r_u" kindref="compound">LRU</ref> Coding example as giving by BrandVarity</para><para><simplesect kind="author"><para>Dalin Williams </para></simplesect>
+<simplesect kind="version"><para>1.0.0 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" line="14" column="1" bodyfile="D:/Users/Dalin Williams/Desktop/LRU/src/LRU.java" bodystart="14" bodyend="321"/>
+    <listofallmembers>
+      <member refid="class_l_r_u_1a387b1a859bd1b63e588a2aa580cee9c5" prot="public" virt="non-virtual"><scope>LRU</scope><name>get</name></member>
+      <member refid="class_l_r_u_1a3307e593d7d7622466a6845753a4a51a" prot="private" virt="non-virtual"><scope>LRU</scope><name>head</name></member>
+      <member refid="class_l_r_u_1a265cf83061ca2f6b5dc9e8ca842beea4" prot="public" virt="non-virtual"><scope>LRU</scope><name>LRU</name></member>
+      <member refid="class_l_r_u_1a2acf6204af20117102eb77b9e81b8c70" prot="public" virt="non-virtual"><scope>LRU</scope><name>main</name></member>
+      <member refid="class_l_r_u_1af394ff662d37787a317459b398558860" prot="private" virt="non-virtual"><scope>LRU</scope><name>map</name></member>
+      <member refid="class_l_r_u_1a0f2b5031e57c4e032e359b86f4afab5f" prot="private" virt="non-virtual"><scope>LRU</scope><name>moveToFront</name></member>
+      <member refid="class_l_r_u_1ab702341aa4a02cc01688ef45bc180d52" prot="public" virt="non-virtual"><scope>LRU</scope><name>set</name></member>
+      <member refid="class_l_r_u_1a9a2fadac2e0c1dd3f8ccb65aec033b97" prot="private" virt="non-virtual"><scope>LRU</scope><name>size</name></member>
+      <member refid="class_l_r_u_1acbb13034ea08b8b71958e32322f63845" prot="private" virt="non-virtual"><scope>LRU</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
