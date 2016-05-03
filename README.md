@@ -8,7 +8,7 @@ Hello! Thank you so much for getting me this far in the application process, and
 
 ## Versions
 
-The initial push aptly named **"THIS IS THE FIRST PUSH :dancer:"** and [accessible via this link](https://github.com/funkeyfreak/LRU/commit/c812d5c01fc7ed04708c16929df41b768a5e280d) is the code developed within the 2 hour limit. I have not added the JUnit framework because I kept 'tabs' of my stubbed tests in an atom.io text file. The second push shall be added shortly, detailing all the unit tests I have written!
+The initial push aptly named **"The First and Finial"** and [accessible via this link](https://github.com/funkeyfreak/LRU/commit/e87e44a2c7d3afc7cfb224ea0751996e0905dfcc) is the code developed within the 2 hour limit. I have not added the JUnit framework because I kept 'tabs' of my stubbed tests in an atom.io text file. The second push shall be added shortly, detailing all the unit tests I have written!
 
 ## Basic Instructions
 
