@@ -21,7 +21,7 @@ The layout and general instructions can be seen per the instruction file sent to
 
 ## Installation Instructions
 
-Being a petty windows user (for the time being), I used IntelliJ IDEA (the bulk of the developing) and eclipse (for testing the project in Java 16) for my development process, and therefore used that terminal for running my application. I have also followed the instructions [here](https://docs.oracle.com/javase/tutorial/getStarted/cupojava/win32.html) to run the application from cmd prompt. The cmd used in **java -cp . LRU** ran from within the .\LRU\bin folder. This will initialize your application and allow you to run as many tests as you would like.
+Being a petty windows user (for the time being), I used IntelliJ IDEA (the bulk of the developing) and eclipse (for testing the project in Java 16) for my development process, and therefore used that terminal for running my application. I have also followed the instructions [here](https://docs.oracle.com/javase/tutorial/getStarted/cupojava/win32.html) to run the application from cmd prompt. First, if you are running any version other than Java 8, build the project by running **javac LRU.java** from within the .\LRU\src folder. Proceed and run the application by running **java LRU**. With Java 8, simply navigate to .\LRU\bin and run **java -cp . LRU**. This will initialize your application and allow you to run as many tests as you would like.
 
 As for Linux, I did not have a VM on hand given I was not at my desktop, so unfortunately I do not have precise instructions for Linux
 
